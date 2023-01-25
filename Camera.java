@@ -6,7 +6,6 @@ public class Camera {
     Boolean colored;
     Lens cameraLens;
 
-    // FIXME KEINe Kamera erzeugbar sein die ungueltige Lense hat (exceptions). => Wenn ich den ersten Camera Konstruktor benutze, sind die Brennweiten von Lens gleich 0. Wenn der User vergisst, sie einzustellen, habe ich eine ungueltige Linse.
     public Camera(String brand, int megaPixels, int displaySize, Boolean colored) {
         this.brand = brand;
         this.megaPixels = megaPixels;
@@ -42,7 +41,7 @@ public class Camera {
         return this.displaySize;
     }
 
-    public Boolean getColored() {
+    public Boolean isColored() {
         return this.colored;
     }
 
