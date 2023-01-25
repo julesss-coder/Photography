@@ -1,8 +1,7 @@
 public class Lens {
     private static int lensCounter = 0;
-    // TODO Standardwerte anlegen
-    private int minFocalLength;
-    private int maxFocalLength;
+    private int minFocalLength = 50;
+    private int maxFocalLength = 70;
 
     public Lens(int minFocalLength, int maxFocalLength) {
         if (minFocalLength < maxFocalLength) {
